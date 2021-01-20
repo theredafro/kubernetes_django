@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: django-service
+  name: kubernetes-django-service
 spec:
   selector:
     app: django-container
