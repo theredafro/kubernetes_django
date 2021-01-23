@@ -1,5 +1,5 @@
 FROM python:3.8-slim
-MAINTAINER Mark Gituma <mark.gituma@gmail.com>
+LABEL maintainer="jimmygitts@gmail.com"
 
 ENV PROJECT_ROOT /app
 WORKDIR $PROJECT_ROOT

@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: django
+  name: kubernetes-django
   labels:
     deployment: django
 spec:
@@ -15,8 +15,8 @@ spec:
         pod: django
     spec:
       containers:
-        - name: django
-          image: gitumarkk/k8_django_minikube:part_4
+        - name: django-web
+          image: theredafro/django_k8s:v3.2
           command: ['/bin/bash', 'run.sh'] # runs migrations and starts the server
           ports:
             - containerPort: 8000

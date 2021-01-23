@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: celery-worker
-          image: gitumarkk/k8_django_minikube:part_4
+          image: theredafro/django_k8s:v3.2
           command: ['celery', '-A', 'kubernetes_django', 'worker', '-l', 'INFO']
           env:
             - name: POSTGRES_USER

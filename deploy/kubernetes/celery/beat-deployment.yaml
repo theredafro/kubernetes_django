@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: celery-beat
-          image: gitumarkk/k8_django_minikube:part_4
+          image: theredafro/django_k8s:v3.2
           command: ['celery', '-A', 'kubernetes_django', 'beat', '-l', 'DEBUG']
           env:
             - name: POSTGRES_USER
